@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University-Contact</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/c2cc11dfc2.js"></script>
+            
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Course.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+<!--Contact Us-->
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>House No: 26</h5>
+                        <p>Veer Sarvakar Colony
+                            100 Feet Road
+                            Lucknow,
+                            Uttar Pradesh
+                        </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 8826XXXX11</h5>
+                        <p>Monday to Friday,From 9 AM to 7 PM  </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>contactus@gmail.com</h5>
+                        <p>Email us for any Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="formhandler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name"reqired>
+                    <input type="email" name="email" placeholder="Enter Email Address"reqired>
+                    <input type="text" name="subject" placeholder="Enter Your Subjects"reqired>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">
+                        Send Message
+                    </button>
+                </form>
+
+            </div>
+        </div>
+
+
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d227826.43348609!2d80.946166!3d26.8466937!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1631286109688!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+<!---Footer-->
+ <section class="footer">
+     <h4>About Us</h4>
+     <p>This Website was made so that we could connect with as many people as possible.</p>
+     <div class="icons">
+     <i class="fa fa-facebook"></i>
+     <i class="fa fa-twitter"></i>
+     <i class="fa fa-google"></i>
+     <i class="fa fa-instagram"></i>
+     <i class="fa fa-linkedin"></i>
+     </div>
+     <p>Made By <i class="fa fa-github icons"></i>NIKITA</p>
+     </section>
+<!--- javascript code from here---> 
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showMenu()
+        {
+            navlinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navlinks.style.right="-200px";
+        }
+
+    </script>
+</body>
+</html>
